@@ -7,6 +7,7 @@ const translations = {
     "nav.support": "Support",
     "hero.eyebrow": "Hello, I'm",
     "hero.lead": "Software developer and endurance athlete. I build apps that help people, and I spend my free time running, diving, and racing triathlons.",
+    "hero.about": "I'm a Computer Engineer (Ingeniero Civil Informático) and mobile app developer with over {years} years of experience building iOS and Android apps — currently as a Mobile Application Developer at Caja Los Andes. I work mainly with .NET MAUI, Swift, and Azure (AZ-900 certified). Outside of code, I'm an endurance athlete and a certified SDI Open Water diver.",
     "hero.cta1": "See my projects",
     "hero.cta2": "Get in touch",
     "projects.title": "Projects",
@@ -42,6 +43,7 @@ const translations = {
     "nav.support": "Apoyo",
     "hero.eyebrow": "Hola, soy",
     "hero.lead": "Desarrollador de software y atleta de resistencia. Creo aplicaciones que ayudan a las personas, y en mi tiempo libre corro, buceo y compito en triatlones.",
+    "hero.about": "Soy Ingeniero Civil Informático y desarrollador de aplicaciones móviles con más de {years} años de experiencia creando apps iOS y Android — actualmente como Mobile Application Developer en Caja Los Andes. Trabajo principalmente con .NET MAUI, Swift y Azure (certificado AZ-900). Fuera del código, soy atleta de resistencia y buzo certificado SDI Open Water.",
     "hero.cta1": "Ver mis proyectos",
     "hero.cta2": "Contáctame",
     "projects.title": "Proyectos",
@@ -72,11 +74,16 @@ const translations = {
   }
 };
 
+const EXPERIENCE_START_YEAR = 2016;
+
 function applyLanguage(lang) {
+  const years = new Date().getFullYear() - EXPERIENCE_START_YEAR;
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (translations[lang][key]) el.textContent = translations[lang][key];
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key].replace("{years}", years);
+    }
   });
   document.querySelectorAll("#lang-toggle [data-lang]").forEach((s) => {
     s.classList.toggle("active", s.getAttribute("data-lang") === lang);
