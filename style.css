@@ -240,7 +240,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Contact */
-.contact-box { max-width: var(--max); margin: 0 auto; }
+.contact-box { max-width: var(--max); margin: 0 auto; display: flex; gap: 0.8rem; flex-wrap: wrap; }
 
 /* Support */
 .support-row {
