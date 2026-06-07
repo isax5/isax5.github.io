@@ -31,7 +31,8 @@ const translations = {
     "support.title": "Support My Work",
     "support.sub": "If my projects help you, a small contribution keeps them going.",
     "support.paypal": "Donate with PayPal",
-    "support.patreon": "Become a Patron"
+    "support.patreon": "Become a Patron",
+    "support.back": "← Back to home"
   },
   es: {
     "nav.projects": "Proyectos",
@@ -64,7 +65,8 @@ const translations = {
     "support.title": "Apoya mi trabajo",
     "support.sub": "Si mis proyectos te ayudan, una pequeña contribución los mantiene en marcha.",
     "support.paypal": "Donar con PayPal",
-    "support.patreon": "Hazte mecenas"
+    "support.patreon": "Hazte mecenas",
+    "support.back": "← Volver al inicio"
   }
 };
 
@@ -85,8 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let lang = "en";
   try {
-    lang = localStorage.getItem("lang") ||
-      (navigator.language && navigator.language.startsWith("es") ? "es" : "en");
+    lang = localStorage.getItem("lang") || "en";
   } catch (e) {}
   applyLanguage(lang);
 
