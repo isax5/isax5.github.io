@@ -1,1 +1,134 @@
-<h1>Hello Isax5</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Rebolledo — Developer, Athlete & Maker</title>
+  <meta name="description" content="Personal site of Isaac Rebolledo (isax5): software projects, endurance sports, and ways to support my work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="logo">isax5</a>
+    <nav class="nav">
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#lifestyle" data-i18n="nav.lifestyle">Life Style</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a href="support.html" data-i18n="nav.support">Support</a>
+    </nav>
+    <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+      <span data-lang="en" class="active">EN</span><span class="sep">/</span><span data-lang="es">ES</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Hello, I'm</p>
+        <h1>Isaac Rebolledo</h1>
+        <p class="lead" data-i18n="hero.lead">
+          Software developer and endurance athlete. I build apps that help people,
+          and I spend my free time running, diving, and racing triathlons.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects" data-i18n="hero.cta1">See my projects</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2 data-i18n="projects.title">Projects</h2>
+        <p class="section-sub" data-i18n="projects.sub">Things I've designed, built, and shipped.</p>
+      </div>
+      <div class="cards">
+        <a class="card" href="https://www.askanadventistfriend.com/" target="_blank" rel="noopener">
+          <span class="card-tag" data-i18n="tag.mobile">Mobile App</span>
+          <h3>Ask an Adventist Friend</h3>
+          <p data-i18n="proj.aaaf">A mobile app I built — a friendly space to ask questions and connect with the Adventist community.</p>
+          <span class="card-link">askanadventistfriend.com →</span>
+        </a>
+        <a class="card" href="https://quinoaplantbased.com/es/" target="_blank" rel="noopener">
+          <span class="card-tag" data-i18n="tag.mobile">Mobile App</span>
+          <h3>Quinoa</h3>
+          <p data-i18n="proj.quinoa">A plant-based recipes and lifestyle mobile app.</p>
+          <span class="card-link">quinoaplantbased.com →</span>
+        </a>
+        <a class="card" href="https://isax5.github.io/hymnal/" target="_blank" rel="noopener">
+          <span class="card-tag" data-i18n="tag.mobile">Mobile App</span>
+          <h3>Hymnal</h3>
+          <p data-i18n="proj.hymnal">A mobile app I built — a digital hymnal you can browse anywhere.</p>
+          <span class="card-link">isax5.github.io/hymnal →</span>
+        </a>
+        <a class="card" href="https://isax5.github.io/gym-trainer/" target="_blank" rel="noopener">
+          <span class="card-tag" data-i18n="tag.mobile">Mobile App</span>
+          <h3>Gym Trainer</h3>
+          <p data-i18n="proj.gym">A mobile app I built — a workout companion to plan and track gym sessions.</p>
+          <span class="card-link">isax5.github.io/gym-trainer →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Life Style -->
+    <section id="lifestyle" class="section section-alt">
+      <div class="section-head">
+        <h2 data-i18n="life.title">Life Style</h2>
+        <p class="section-sub" data-i18n="life.sub">When I'm not coding, I'm moving.</p>
+      </div>
+
+      <div class="social-row">
+        <a class="pill" href="https://www.strava.com/athletes/isax5" target="_blank" rel="noopener">Strava</a>
+        <a class="pill" href="https://www.runtastic.com/user/da494cde-5051-fc1e-89a7-b5aae2e7dabd" target="_blank" rel="noopener">Adidas Running</a>
+      </div>
+
+      <div class="gallery-group">
+        <h3 class="gallery-title" data-i18n="life.running">Running</h3>
+        <div class="gallery">
+          <figure><img src="assets/maraton santiago.JPG" alt="Santiago Marathon" loading="lazy" /><figcaption>Santiago Marathon</figcaption></figure>
+          <figure><img src="assets/half marathon.JPG" alt="Half Marathon" loading="lazy" /><figcaption data-i18n="cap.half">Half Marathon</figcaption></figure>
+          <figure><img src="assets/half marathon concepcion.jpg" alt="Concepción Half Marathon" loading="lazy" /><figcaption data-i18n="cap.halfcc">Concepción Half Marathon</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <h3 class="gallery-title" data-i18n="life.triathlon">Triathlon</h3>
+        <div class="gallery">
+          <figure><img src="assets/triathlon pucon.JPG" alt="Pucón Triathlon" loading="lazy" /><figcaption data-i18n="cap.pucon">Pucón Triathlon</figcaption></figure>
+          <figure><img src="assets/triathlon renaico.jpg" alt="Renaico Triathlon" loading="lazy" /><figcaption data-i18n="cap.renaico">Renaico Triathlon</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <h3 class="gallery-title" data-i18n="life.diving">Diving</h3>
+        <div class="gallery">
+          <figure><img src="assets/diving.JPG" alt="Diving" loading="lazy" /><figcaption data-i18n="life.diving">Diving</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <p class="section-sub" data-i18n="contact.sub">Want to collaborate or just say hi?</p>
+      </div>
+      <div class="contact-box">
+        <a class="btn btn-primary" href="mailto:isaac.rebolledoleal@gmail.com">isaac.rebolledoleal@gmail.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Isaac Rebolledo · isax5</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
